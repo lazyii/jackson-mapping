@@ -1,6 +1,15 @@
-[
-    {
-        "sourcePath": "/taxnum",
-        "targetPath": "/taxNum",
-    }
-]
+{
+    "key1": "key1-target",
+    "a": "a-target",
+    "key2": "key2-target",
+    "null": "null-target",
+    "phone": "phone-target",
+    "key3": "key3-target",
+    "key4": "key4-target",
+    "companyName": "companyName-target",
+    "taxnum": "taxnum-target",
+    "deptIds": "deptIds-target",
+    "others": "others-target",
+    "email": "email-target",
+    "extInfo": "extInfo-target"
+}

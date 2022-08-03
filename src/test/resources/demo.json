@@ -1,6 +1,7 @@
 {
     "taxnum": "taxnum0000001",
     "companyName": "测试有限公司",
+    "null": null,
     "extInfo": {
         "email": "abc@abc.com",
         "phone": "13112341234"
@@ -14,7 +15,10 @@
     "others": [
         {
             "key1": "value10",
-            "key2": "value20"
+            "key2": "value20",
+            "key4": [
+                {"a": ""}
+            ]
         },
         {
             "key1": "value11",
