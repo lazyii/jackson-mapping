@@ -1,0 +1,31 @@
+{
+    "extInfo-target": {
+        "email-target": "abc@abc.com",
+        "phone-target": "13112341234"
+    },
+    "deptIds-target": [
+        1,
+        2,
+        3,
+        4.00000000000000000000000000000000000000000001
+    ],
+    "others-target": [
+        {
+            "key2-target": "value20",
+            "key1-target": "value10",
+            "key4-target": [
+                {
+                    "a-target": ""
+                }
+            ]
+        },
+        {
+            "key2-target": "value21",
+            "key3-target": "value31",
+            "key1-target": "value11"
+        }
+    ],
+    "companyName-target": "测试有限公司",
+    "taxnum-target": "taxnum0000001",
+    "null-target": null
+}

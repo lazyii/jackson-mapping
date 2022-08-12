@@ -1,0 +1,7 @@
+Hello {{this.taxnum}} {{this.price}}!
+
+with person: {{#with extInfo}} {{email}} - {{phone}}  {{this}} {{/with}}
+common person: {{this.extInfo.email}} - {{this.extInfo.email}}
+
+array person: {{this.deptIds}} - {{this.deptIds.[3]}}
+each person: {{#each this.others}}{{this.key1}} - {{this.key4}} **--**     {{/each}}

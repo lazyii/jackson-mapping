@@ -1,0 +1,14 @@
+Hello #(taxnum) #value(price)!
+
+with person: #(extInfo.email) - #(extInfo.phone) - #(extInfo)
+common person: #(extInfo.email, null)
+
+array person:
+[
+#for(x : others)
+  {
+  ### #(for.index)
+  "key3": #value(x.key3)
+  },
+#end
+]
