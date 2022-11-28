@@ -1,1 +1,24 @@
 # jackson-mapping
+
+This is a demo to convert heterogeneous data.
+
+
+example:
+
+.source json
+[source,json]
+----
+{
+	"name": "john",
+	"country": "USA"
+}
+----
+
+.target json
+[source,json]
+----
+{
+	"t_name": "john",
+	"t_country": "USA"
+}
+----
