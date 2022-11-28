@@ -1,0 +1,41 @@
+源：
+{
+    "a":"b",
+    "c":"d",
+    "obj":{
+        "arr":[
+            {
+                "a":"12"
+            }
+        ]
+    }
+    "array": [1,2,3]
+}
+
+出参模板：
+
+模板明细1：
+
+
+detail  List<Object>
+    detailIndex   integer
+    detailType    integer
+
+{
+"invoiceType":#(a),
+"detail":[
+    #for(x : obj.arr)
+      {
+      "detailIndex": #value(x.a),
+      "detailType": #value(x.a)
+      },
+    #end
+]
+}
+
+
+arr    List<String> List<integer>  原始类型
+{
+"invoiceType":#(a),
+"arr": #(array)
+}

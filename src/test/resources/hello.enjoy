@@ -1,14 +1,20 @@
-Hello #(taxnum) #value(price)!
+Hello #(taxnum1) #(taxnum) #value(price)!
 
 with person: #(extInfo.email) - #(extInfo.phone) - #(extInfo)
 common person: #(extInfo.email, null)
 
-array person:
-[
-#for(x : others)
+array person:[
+#for(row : others)
   {
-  ### #(for.index)
-  "key3": #value(x.key3)
+   "key3Name": #value(row.key3)
   },
 #end
 ]
+
+
+
+{
+"test":{
+ "invoiceNumbers":#(array)
+}
+}
