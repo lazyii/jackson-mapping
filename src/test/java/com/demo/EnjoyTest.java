@@ -67,9 +67,9 @@ public class EnjoyTest {
     @Test
     public void enjoy_parse() {
         try {
+    
             // nodeId 0 默认为root,所以其他的从 100 开始
             AtomicInteger autoId = new AtomicInteger(NODE_ID_INITIAL_VALUE);
-            
             JsonNode jsonNode = JacksonUtil.readTree(source);
             System.out.println(jsonNode);
             Spliterator<String> spliterator = Spliterators.spliteratorUnknownSize(jsonNode.fieldNames(), Spliterator.ORDERED);

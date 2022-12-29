@@ -1,20 +1,55 @@
 Hello #(taxnum1) #(taxnum) #value(price)!
 
-with person: #(extInfo.email) - #(extInfo.phone) - #(extInfo)
-common person: #(extInfo.email, null)
+{"taxnum":"#(shuihao)",
+"companyName":"#(mingcheng)",
+"null":null,"array": #(array) ,"price": #(jiage) ,
+"extInfo":{"email":"#(youxiang)","phone":"#(shouji)"}}
 
-array person:[
-#for(row : others)
-  {
-   "key3Name": #value(row.key3)
-  },
-#end
-]
+@primitive_mixed_array: #(array)
+@int_array: #(int_array)
+@string_array: #(string_array)
 
 
-
+目标数据：
 {
-"test":{
- "invoiceNumbers":#(array)
+"invoiceType":#(a),
+"arr": #value(others),
+"arr1": #(others),
+"detail":[
+    #for(x : others)
+      {
+      "detailIndex": #value(x?.key4),
+      "detailType": #value(x.key4)
+      },
+    #end
+]
 }
-}
+
+
+
+
+
+{"taxnum":"#(shuihao)","companyName":"#(mingcheng)",
+"null":null,"array": #(arr) ,"price": #(jiage) ,"extInfo":{"email":"#(kuozhanxinxi.youxiang)",
+"phone":"#(kuozhanxinxi.shouji)"},"extInfo1":{"email1":null,"phone1":null},"deptIds": #(bumen) ,
+
+"others":[ #for(fItem : [{\"key1\":\"#(zd1)\",\"key2\":\"#(zd2)\",\"key3\":\"#(zd3)\",\"key4\":[{\"a\":null}]}]) ,{"key1":"#(zd1)","key2":"#(zd2)","key3":"#(zd3)","key4":[ #for(fItem : [{\"a\":null}]) ,{"a":null}, #end ]}, #end
+
+],"a":{"name":"#(b.info.xingming)","info":{"country":"#(b.guojia)","gender":null}}}
+
+
+
+
+
+
+
+{"taxnum":"#(shuihao)","companyName":"#(mingcheng)",
+"null":null,"array": #(arr) ,
+"price": #(jiage) ,
+"extInfo":{"email":"#(kuozhanxinxi.youxiang)",
+"phone":"#(kuozhanxinxi.shouji)"},"extInfo1":{"email1":null,"phone1":null},
+"deptIds": #(bumen) ,
+
+"others":[{"key1":"#(zd1)","key2":"#(zd2)","key3":"#(zd3)","key4":[{"a":null}]}],
+
+"a":{"name":"#(b.info.xingming)","info":{"country":"#(b.guojia)","gender":null}}}
